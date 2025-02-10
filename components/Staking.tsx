@@ -67,7 +67,7 @@ export const Staking = () => {
                     margin: "20px 0",
                     width: "100%",
                 }}>
-                    <h2 style={{ marginRight: "20px", color: "white", }}>Your Chilaaaas!!!!</h2>
+                    <h2 style={{ marginRight: "20px", color: "white", }}>Character NFTs</h2>
                     <div style={{ width: "50px", marginRight: "210px", padding: "10px"}}>
                     <TransactionButton
                                 transaction={async () => {
@@ -99,7 +99,7 @@ export const Staking = () => {
                                 style={{
                                     width: "100%"
                                 }}
-                            >Stake All</TransactionButton> </div>
+                            >Stake All at Once</TransactionButton> </div>
                 </div>
                 <hr style={{
                     width: "100%",
@@ -122,7 +122,7 @@ export const Staking = () => {
                                 />
                             ))
                         ) : (
-                            <p style={{ color: "white" }}>Either it's loading or You own 0 NFTs</p>
+                            <p style={{ color: "white" }}>Loading... or You own 0 NFTs</p>
                         )}
                     </div>
                 </div>
