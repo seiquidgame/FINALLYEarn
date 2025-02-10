@@ -15,7 +15,7 @@ export default function Home() {
       margin: "20px auto",
       width: "500px",
     }}>
-      <h1 style={{color:"black"}}>Stakechilaaaa</h1>
+      <h1 style={{color:"black"}}>SeiQuid Game Staking</h1>
       <ConnectEmbed
         client={client}
         chain={chain}
