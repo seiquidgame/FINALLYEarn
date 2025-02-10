@@ -14,12 +14,14 @@ type OwnedNFTsProps = {
 export const NFTCard = ({ nft, refetchOwnedNFTs, refetchStakedInfo}: OwnedNFTsProps) => {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [isApproved, setIsApproved] = useState(false);
+    const [cid, setCid] = useState("ipfs.io/ipfs/bafybeigy72q2ed5rqkbfosipodkahj4t26vsbgzxcd3wjsgsyeun7cixp4/");
+    const [images, setIMAGE] = useState(nft.id);
 
     return (
         <div style={{margin: "10px"}}>
             <MediaRenderer 
                 client={client}
-                src={nft.metadata.image}
+                src={'https://'+`${cid}`+ '' + images + '.' + 'png'}
                 style={{
                     borderRadius: "10px",
                     marginBottom: "10px",
