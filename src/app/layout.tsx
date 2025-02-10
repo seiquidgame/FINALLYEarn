@@ -15,8 +15,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Taukapuk Island",
-  description: "The most rewardable-community Sei project",
+  title: "SeiQuid Game Staking",
+  description: "NFT Staking of SeiQuid Game to earn $SQUID token",
 };
 
 export default function RootLayout({
