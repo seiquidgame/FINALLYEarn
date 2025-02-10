@@ -3,6 +3,7 @@ import { NFT_CONTRACT, STAKING_CONTRACT } from "@/app/utils/contracts";
 import { getNFT } from "thirdweb/extensions/erc721";
 import { client } from "@/app/client";
 import { prepareContractCall } from "thirdweb";
+import { useState } from "react";
 
 type StakedNFTCardProps = {
     tokenId: bigint;
@@ -11,6 +12,8 @@ type StakedNFTCardProps = {
 };
 
 export const StakedNFTCard: React.FC<StakedNFTCardProps> = ({ tokenId, refetchStakedInfo, refetchOwnedNFTs }) => {
+    const [cid, setCid] = useState("ipfs.io/ipfs/bafybeigy72q2ed5rqkbfosipodkahj4t26vsbgzxcd3wjsgsyeun7cixp4/");
+    const [images, setIMAGE] = useState(tokenId);
     const { data: nft } = useReadContract(
         getNFT,
         {
@@ -21,9 +24,9 @@ export const StakedNFTCard: React.FC<StakedNFTCardProps> = ({ tokenId, refetchSt
     
     return (
         <div style={{ margin: "10px" }}>
-            <MediaRenderer
+            <MediaRenderer 
                 client={client}
-                src={nft?.metadata.image}
+                src={'https://'+`${cid}`+ '' + images + '.' + 'png'}
                 style={{
                     borderRadius: "10px",
                     marginBottom: "10px",
