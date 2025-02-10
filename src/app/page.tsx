@@ -16,10 +16,6 @@ export default function Home() {
       width: "500px",
     }}>
       <h1 style={{color:"white"}}>SeiQuid Game Staking</h1>
-      <div className="navbaro">
-        <a href="https://seiquid.xyz">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="https://magiceden.io/mint-terminal/sei/0x75873DD4a039691110A88aB7EeC107e645BA9aB5">Get More NFTs</a>
-      </div>
       <ConnectEmbed
         client={client}
         chain={chain}
