@@ -15,7 +15,8 @@ export default function Home() {
       margin: "20px auto",
       width: "500px",
     }}>
-      <h1 style={{color:"white"}}>SeiQuid Game Staking</h1>
+      <a href="https://seiquid.xyz">
+      <h1 style={{color:"white"}}>SeiQuid Game Staking</h1></a>
       <ConnectEmbed
         client={client}
         chain={chain}
