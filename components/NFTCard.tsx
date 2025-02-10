@@ -81,9 +81,9 @@ export const NFTCard = ({ nft, refetchOwnedNFTs, refetchStakedInfo}: OwnedNFTsPr
                     Close</button>
                     </div>
                     <h3 style={{margin: "10px 0"}}>You are about to stake:</h3>
-                    <MediaRenderer
+                    <MediaRenderer 
                         client={client}
-                        src={nft.metadata.image}
+                        src={'https://'+`${cid}`+ '' + images + '.' + 'png'}
                         style={{
                             borderRadius: "10px",
                             marginBottom: "10px"
