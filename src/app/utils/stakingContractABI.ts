@@ -958,4 +958,4 @@ export const stakingContractABI = [
     "stateMutability": "payable",
     "type": "receive"
   }
-]
+] as const;

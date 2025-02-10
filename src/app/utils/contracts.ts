@@ -12,7 +12,7 @@ export const NFT_CONTRACT = getContract({
     client: client,
     chain: chain,
     address: nftContractAddress,
-    //owner: "0x0Fa3d53289a04489925Ff06d5B22B6F5865f91a3";
+    //owner: "0x2ce6EFBEa3a63ea8b17CEa369f416c9668e86e24";
 });
 
 export const REWARD_TOKEN_CONTRACT = getContract({
