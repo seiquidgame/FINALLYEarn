@@ -14,7 +14,7 @@ type OwnedNFTsProps = {
 export const NFTCard = ({ nft, refetchOwnedNFTs, refetchStakedInfo}: OwnedNFTsProps) => {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [isApproved, setIsApproved] = useState(false);
-    const [cid, setCid] = useState("ipfs.io/ipfs/bafybeigy72q2ed5rqkbfosipodkahj4t26vsbgzxcd3wjsgsyeun7cixp4/");
+    const [cid, setCid] = useState("ipfs.io/ipfs/bafybeifyaqjbt66nyejgpqdbeamynusekpsu6ix4hrnmbw4wlx3wannadm/");
     const [images, setIMAGE] = useState(nft.id);
 
     return (
